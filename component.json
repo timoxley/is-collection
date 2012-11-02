@@ -1,0 +1,18 @@
+{
+  "name": "is-collection",
+  "repo": "timoxley/is-collection",
+  "description": "Detect if a variable is a HTML Collection or a NodeList.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/type": "*"
+  },
+  "development": {
+    "timoxley/assert": "*",
+    "component/domify": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "licence": "BSD"
+}
