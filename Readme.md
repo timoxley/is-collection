@@ -18,9 +18,9 @@ collections, such as `<form>` and `<select>`, to be array-like.
 isCollection(document.querySelectorAll('div')) // => truthy (2)
 isCollection([]) // => truthy (1)
 
-function(arguments) {
-  isCollection(document.querySelectorAll('div')) // => truthy (2)
-}()
+function() {
+  return isCollection(arguments)
+}() // => truthy (2)
 
 ```
 
