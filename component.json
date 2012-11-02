@@ -1,7 +1,7 @@
 {
   "name": "is-collection",
   "repo": "timoxley/is-collection",
-  "description": "Detect if a variable is a HTML Collection or a NodeList.",
+  "description": "Test whether an object is array-like, e.g arguments or NodeList.",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
