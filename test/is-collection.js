@@ -30,12 +30,12 @@ it('detects window is not a collection', function() {
 
 describe('testing against dom', function() {
   it('fails for single nodes', function() {
-    assert.equal(0, isCollection(domify('<div></div>'))); // single nodes should fail
+    assert.equal(0, isCollection(domify('<div></div>')[0])); // single nodes should fail
   })
 
   it('detects htmlelement collections are array-like', function() {
-    document.body.appendChild(domify('<span></span>'))
-    document.body.appendChild(domify('<span></span>'))
+    document.body.appendChild(domify('<span></span>')[0])
+    document.body.appendChild(domify('<span></span>')[0])
     assert.equal(2, isCollection(document.getElementsByTagName('span')));
   })
 
